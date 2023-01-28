@@ -1,0 +1,22 @@
+{
+  "name": "clipboard-landing-page",
+  "version": "1.0.0",
+  "description": "Clipboard landing page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KristinaRadosavljevic/clipboard-landing-page.git"
+  },
+  "author": "Kristina Radosavljevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KristinaRadosavljevic/clipboard-landing-page/issues"
+  },
+  "homepage": "https://github.com/KristinaRadosavljevic/clipboard-landing-page#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

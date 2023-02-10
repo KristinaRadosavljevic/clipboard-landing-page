@@ -1,39 +1,38 @@
-// # Front-end Style Guide
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 
-// ## Layout
+// Color variables
+$strong-cyan: hsl(171, 66%, 44%);
+$light-blue: hsl(233, 100%, 69%);
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
 
-// The designs were created to the following widths:
+// Global resets
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-// - Mobile: 375px
-// - Desktop: 1440px
+ul {
+  list-style-type: none;
+}
 
-// ## Colors
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-// ### Primary
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
 
-// - Strong Cyan: hsl(171, 66%, 44%)
-// - Light Blue: hsl(233, 100%, 69%)
-
-// ### Neutral
-
-// - Dark Grayish Blue: hsl(210, 10%, 33%)
-// - Grayish Blue: hsl(201, 11%, 66%)
-
-// ## Typography
-
-// ### Body Copy
-
-// - Font size: 18px
-
-// ### Fonts
-
-// - Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
-// - Weights: 400, 600
-
-// ## Icons
-
-// For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
-
-// - [Font Awesome](https://fontawesome.com)
-// - [IcoMoon](https://icomoon.io)
-// - [Ionicons](https://ionicons.com)
+// Page styles
+body {
+  font-size: 1.125rem;
+  font-family: "Bai Jamjuree", sans-serif;
+}

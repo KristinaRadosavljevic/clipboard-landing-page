@@ -6,6 +6,19 @@ $light-blue: hsl(233, 100%, 69%);
 $dark-grayish-blue: hsl(210, 10%, 33%);
 $grayish-blue: hsl(201, 11%, 66%);
 
+// Mixins
+@mixin btn($color) {
+  background-color: $color;
+  border-bottom: 0.2rem solid darken($color, 10%);
+  box-shadow: 0 0.3rem 1rem lighten($color, 23%);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: lighten($color, 10%);
+    border-bottom-color: lighten($color, 5%);
+  }
+}
+
 // Global resets
 *,
 *::after,
@@ -31,8 +44,63 @@ button {
   cursor: pointer;
 }
 
+// Reusable classes
+.action-btns {
+  margin: 0 auto;
+  display: flex;
+  gap: 1.2rem;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 50rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    &.green {
+      @include btn($strong-cyan);
+    }
+
+    &.blue {
+      @include btn($light-blue);
+    }
+  }
+}
+
 // Page styles
 body {
   font-size: 1.125rem;
   font-family: "Bai Jamjuree", sans-serif;
+  line-height: 1.6;
+}
+
+.main-header {
+  background: url("../images/bg-header-desktop.png") no-repeat center top;
+  height: 100vh;
+  padding-bottom: 5vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+  img {
+    margin: 0 auto 9vh;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+    color: $dark-grayish-blue;
+    margin-bottom: 2vh;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $grayish-blue;
+    width: 43rem;
+    margin: 0 auto 7vh;
+  }
 }

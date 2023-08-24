@@ -214,3 +214,37 @@ section {
     margin: 0 auto;
   }
 }
+
+footer {
+  // Don't forget to do the active states.
+  background-color: hsl(220, 18%, 97%);
+  margin-top: 10rem;
+
+  .footer-container {
+    // Adjust the gaps once .social is fixed.
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 2.7rem;
+    max-width: 74rem;
+    align-items: center;
+
+    img {
+      height: 4rem;
+    }
+
+    .links {
+      height: 4.8rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .social {
+      display: flex;
+      gap: 2rem;
+      // Get these to be smaller. Images don't fit right.
+    }
+  }
+}

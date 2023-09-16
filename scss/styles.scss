@@ -216,12 +216,11 @@ section {
 }
 
 footer {
-  // Don't forget to do the active states.
   background-color: hsl(220, 18%, 97%);
   margin-top: 10rem;
+  padding: 0 2rem;
 
   .footer-container {
-    // Adjust the gaps once .social is fixed.
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -229,22 +228,38 @@ footer {
     max-width: 74rem;
     align-items: center;
 
-    img {
+    .logo {
       height: 4rem;
     }
 
     .links {
       height: 4.8rem;
+      padding-right: 10rem;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: space-between;
+
+      a {
+        transition: all 0.3s;
+
+        &:hover {
+          color: $strong-cyan;
+        }
+      }
     }
 
     .social {
       display: flex;
       gap: 2rem;
-      // Get these to be smaller. Images don't fit right.
+
+      path {
+        transition: all 0.3s;
+      }
+
+      a:hover path {
+        fill: $strong-cyan;
+      }
     }
   }
 }
